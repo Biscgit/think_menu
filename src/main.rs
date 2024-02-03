@@ -4,12 +4,12 @@ use std::{
 };
 
 use crate::{
-    app::ThinkMenu,
+    think_menu::ThinkMenu,
     terminal::*,
 };
 
 mod terminal;
-mod app;
+mod think_menu;
 mod types;
 
 #[tokio::main]
