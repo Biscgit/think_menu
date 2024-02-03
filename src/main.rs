@@ -12,6 +12,7 @@ mod terminal;
 mod think_menu;
 mod types;
 
+
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
     // setup terminal

@@ -1,0 +1,18 @@
+[package]
+authors = ["Biscgit"]
+description = "A configuration tool for Lenovo Laptops running Linux"
+edition = "2021"
+license = "GPL-3"
+name = "think_menu"
+readme = "README.md"
+repository = "https://github.com/Biscgit/think_menu"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+color-eyre = "0.6.2"
+crossterm = { version = "0.27.0", features = ["event-stream"] }
+ratatui = "0.26.0"
+tokio = { version = "1.32.0", features = ["full"] }
+tokio-util = "0.7.9"
+futures = "0.3.28"
