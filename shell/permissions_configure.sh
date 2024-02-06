@@ -12,7 +12,7 @@ fi
 
 # truncate file or create new
 if [ -e "$file_path" ]; then
-    truncate -s 0 "$file_path"
+  truncate -s 0 "$file_path"
 else
   touch $file_path || exit 1
 fi
@@ -27,7 +27,7 @@ fi
 # all write permissions
 for file in "${files[@]}"
 do
-	line="%$sudo_user ALL=(ALL) NOPASSWD: /usr/bin/tee /sys/bus/platform/drivers/ideapad_acpi/VPC????\:??/$file";
+  line="%$sudo_user ALL=(ALL) NOPASSWD: /usr/bin/tee /sys/bus/platform/drivers/ideapad_acpi/VPC????\:??/$file";
   echo "$line" | tee -a $file_path > /dev/null;
 done
 
